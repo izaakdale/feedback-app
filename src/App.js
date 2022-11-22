@@ -1,8 +1,13 @@
+import Header from "./components/Header"
+import FeedbackItem from "./components/FeedbackItem"
+
 function App() {
     return (
-        <div class='container'>
-            <h1>Hello from app</h1>
-            <p>Text ettxt Text</p>
+        <div>
+            <Header/>
+            <div className="container">
+                <FeedbackItem></FeedbackItem>
+            </div>
         </div>
     )
 }
