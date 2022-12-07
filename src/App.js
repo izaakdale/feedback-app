@@ -6,7 +6,6 @@ import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 import { FeedbackProvider } from './context/FeedbackContext'
 import AboutPage from './pages/AboutPage'
-import AboutIconLink from './components/AboutIconLink'
 import Post from './components/Post'
 
 function App() {
