@@ -3,10 +3,19 @@ import {motion, AnimatePresence} from 'framer-motion'
 import { useContext } from 'react'
 import FeedbackItem from "./FeedbackItem"
 import FeedbackContext from '../context/FeedbackContext'
+import LoadingIcon from './shared/LoadingIcon'
 
 function FeedbackList() {
 
-    const {feedback} = useContext(FeedbackContext)
+    const {feedback, isLoading} = useContext(FeedbackContext)
+
+    if (isLoading) {
+        return (
+            <div className='feedback-loading'>
+                <LoadingIcon/>
+            </div>
+        )
+    }
 
     if (!feedback || feedback.length === 0) {
         return (

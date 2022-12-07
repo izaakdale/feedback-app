@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutIconLink from './AboutIconLink'
 
 import PropTypes from 'prop-types'
 
@@ -14,6 +15,7 @@ function Header({text, bgColor, txtColor}) {
         <div className='container'>
             <h2>{text}</h2>
         </div>
+        <AboutIconLink/>
     </header>
   )
 }

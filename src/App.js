@@ -27,7 +27,6 @@ function App() {
                             <Route exact path='/about' element={<AboutPage/>} />
                             <Route exact path='/post/:id' element={<Post/>}/>
                         </Routes>
-                        <AboutIconLink/> 
                     </div> 
                     
             </Router>
